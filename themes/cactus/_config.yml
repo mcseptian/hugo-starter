@@ -17,7 +17,7 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: projects_url
+  projects: https://github.com/mcseptian/mcseptian.github.io
 
 
 # Links to your social media accounts.
@@ -25,11 +25,11 @@ nav:
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
 social_links:
-  github: http://github.com/probberechts/cactus-dark
-  twitter: /
+  github: https://github.com/mcseptian/
+  twitter: https://twitter.com/mcseptian/
   facebook: /
-  linkedin: /
-  mail: mailto:name@email.com
+  linkedin: https://linkedin.com/in/septian-adi/
+  mail: mailto:mcseptian007@gmail.com
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -102,10 +102,10 @@ favicon:
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: dark
+colorscheme: classic
 
 # Maximal width of the page in rem units.
-page_width: 48
+page_width: 57
 
 
 ##############################################################################
