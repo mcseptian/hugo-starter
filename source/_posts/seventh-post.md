@@ -25,7 +25,7 @@ Apa itu SLiMS? Aku copy definisinya dari repository mereka nih.
 
 Pertama, kita download source-code dari repository mereka di [github.com](https://github.com/slims/slims7_cendana).
 
-![Download source-code](img/2018-04-15-21-010.png)
+![Download source-code](/img/2018-04-15-21-010.png)
 
 Kedua, extract file hasil download tadi dan ubah file `sysconfig.inc.php`
 
@@ -44,23 +44,23 @@ Ubah `senayanuser` dan `password_senayanuser` sesuai dengan konfigurasi database
 
 Ketiga, buka [phpmyadmin](https://www.phpmyadmin.net/) dan buat database untuk SLiMS dengan nama senayandb. Untuk yang pakai XAMPP di Windows jangan lupa aktifkan dulu servernya.
 
-![Buka PHPMyAdmin](img/2018-04-15-21-020.png "Buka PHPMyAdmin, masukan user dan password")
+![Buka PHPMyAdmin](/img/2018-04-15-21-020.png "Buka PHPMyAdmin, masukan user dan password")
 
-![Buat database untuk SLiMS](img/2018-04-15-21-030.png "Buat database untuk SLiMS")
+![Buat database untuk SLiMS](/img/2018-04-15-21-030.png "Buat database untuk SLiMS")
 
-![Konfirmasi database untuk SLiMS telah dibuat](img/2018-04-15-21-040.png "Konfirmasi database untuk SLiMS telah dibuat")
+![Konfirmasi database untuk SLiMS telah dibuat](/img/2018-04-15-21-040.png "Konfirmasi database untuk SLiMS telah dibuat")
 
 Keempat, pilih `senayandb` yang barusan dibuat dan masuk tab import untuk setting database. Lakukan dengan import file database dari source-code yang sudah kamu download dan extract tadi.
 
-![Setting database dari source-code SLiMS](img/2018-04-15-21-041.png "Setting database dari source-code SLiMS, pilih file senayan.sql")
+![Setting database dari source-code SLiMS](/img/2018-04-15-21-041.png "Setting database dari source-code SLiMS, pilih file senayan.sql")
 
-![Setting database dari source-code SLiMS](img/2018-04-15-21-042.png "Setting database dari source-code SLiMS, file bisa diambil dari folder install")
+![Setting database dari source-code SLiMS](/img/2018-04-15-21-042.png "Setting database dari source-code SLiMS, file bisa diambil dari folder install")
 
-![Setting database dari source-code SLiMS](img/2018-04-15-21-043.png "Setting database dari source-code SLiMS, klik Go")
+![Setting database dari source-code SLiMS](/img/2018-04-15-21-043.png "Setting database dari source-code SLiMS, klik Go")
 
-![Setting database dari source-code SLiMS](img/2018-04-15-21-044.png "Setting database dari source-code SLiMS, konfirmasi database telah disetting")
+![Setting database dari source-code SLiMS](/img/2018-04-15-21-044.png "Setting database dari source-code SLiMS, konfirmasi database telah disetting")
 
-![Setting database dari source-code SLiMS](img/2018-04-15-21-045.png "Setting database dari source-code SLiMS, tampilan struktur database")
+![Setting database dari source-code SLiMS](/img/2018-04-15-21-045.png "Setting database dari source-code SLiMS, tampilan struktur database")
 
 Kelima, upload file yang sudah kamu download dan extract tadi ke direktori server.
 
@@ -104,36 +104,36 @@ Direktori tujuan upload/copy sebagai berikut:
 
 Keenam, akses server dengan alamat `http://localhost/slims/install`.
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-050.png "Tampilan Install dan Setting SLiMS, klilk Let's Start The Installation")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-050.png "Tampilan Install dan Setting SLiMS, klilk Let's Start The Installation")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-060.png "Tampilan Install dan Setting SLiMS, isi sesuai setting senayandb yang kamu buat di step Ketiga dan masukkan username serta password yang akan kamu gunakan untuk masuk Sistem SLiMS lalu klik Continue")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-060.png "Tampilan Install dan Setting SLiMS, isi sesuai setting senayandb yang kamu buat di step Ketiga dan masukkan username serta password yang akan kamu gunakan untuk masuk Sistem SLiMS lalu klik Continue")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-070.png "Tampilan Halaman awal SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-070.png "Tampilan Halaman awal SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-080.png "Tampilan Halaman informasi SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-080.png "Tampilan Halaman informasi SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-090.png "Tampilan Halaman anggota SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-090.png "Tampilan Halaman anggota SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-100.png "Tampilan Halaman petugas SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-100.png "Tampilan Halaman petugas SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-110.png "Tampilan Halaman bantuan SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-110.png "Tampilan Halaman bantuan SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-120.png "Tampilan Halaman login SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-120.png "Tampilan Halaman login SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-130.png "Tampilan Halaman dashboard SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-130.png "Tampilan Halaman dashboard SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-140.png "Tampilan Halaman kontrol serial SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-140.png "Tampilan Halaman kontrol serial SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-150.png "Tampilan Halaman laporan SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-150.png "Tampilan Halaman laporan SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-160.png "Tampilan Halaman sistem SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-160.png "Tampilan Halaman sistem SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-170.png "Tampilan Halaman stok SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-170.png "Tampilan Halaman stok SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-180.png "Tampilan Halaman master SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-180.png "Tampilan Halaman master SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-190.png "Tampilan Halaman keanggotaan SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-190.png "Tampilan Halaman keanggotaan SLiMS")
 
-![Tampilan Install dan Setting SLiMS](img/2018-04-15-21-200.png "Tampilan Halaman sirkulasi SLiMS")
+![Tampilan Install dan Setting SLiMS](/img/2018-04-15-21-200.png "Tampilan Halaman sirkulasi SLiMS")
 
-[Dokumentasi](doc/slims.7.en.manual.pdf "Dokumentasi SLiMS")
+[Dokumentasi](/doc/slims.7.en.manual.pdf "Dokumentasi SLiMS")

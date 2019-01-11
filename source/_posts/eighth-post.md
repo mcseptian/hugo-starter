@@ -98,11 +98,11 @@ zypper dup --no-allow-vendor-change
 
 Sebelum upgrade sebaiknya restart dulu servernya. 
 
-![Hasil Upgrade](img/ad.png "Tampilan:{ -screenfetch- | -cat- | -zypper- } via -ssh- ")
+![Hasil Upgrade](/img/ad.png "Tampilan:{ -screenfetch- | -cat- | -zypper- } via -ssh- ")
 
 Saat upgrade aku temukan beberapa tambahan aplikasi yang sebenarnya ga terlalu dibutuhkan server. Tapi [YaST](https://en.opensuse.org/Portal:YaST) semacam alat untuk mengkonfigurasi hardware dan install aplikasi untuk sistem di openSUSE bisa memudahkan setting juga. Berhubung SUSE Studio berubah menjadi StudioExpress dan tidak lagi mudah untuk mengkonfigurasi sistem seperti yang diinginkan, YaST cukup membantu pekerjaanku. 
 
 Setelah upgrade kalian juga harus reboot servernya untuk mengatasi kernel issue akibat pergantian kernel linux.
 
-[Zypper Command](doc/Zypper-cheat-sheet-1.pdf)
-[Zypper Command](doc/Zypper-cheat-sheet-2.pdf)
+[Zypper Command](/doc/Zypper-cheat-sheet-1.pdf)
+[Zypper Command](/doc/Zypper-cheat-sheet-2.pdf)

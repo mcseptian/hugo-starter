@@ -26,7 +26,7 @@ Pada definisi yang aku temukan, URL (Uniform Resource Locator) adalah tipe spesi
 
 Contoh penulisan URI dan komponennya:
 
-![two URIs and their component parts](img/Screenshot-2018-3-28 Uniform Resource Identifier - Wikipedia.png "two URIs and their component parts")
+![two URIs and their component parts](/img/Screenshot-2018-3-28 Uniform Resource Identifier - Wikipedia.png "two URIs and their component parts")
 
 ## Epilog
 
@@ -34,19 +34,19 @@ Nah, sekarang coba kita masuk lebih dalam untuk mengetahui bagaimana URL atau al
 
 Syntax URL sama seperti URI yaitu:
 
-![Syntax URL](img/Screenshot-2018-3-28 URI - Wikipedia.png "Syntax URL")
+![Syntax URL](/img/Screenshot-2018-3-28 URI - Wikipedia.png "Syntax URL")
 
 ### Query
 
 Itu dia, `query` yang aku cari. Setelah nama file ada question mark untuk menjelaskan ada dimana data yang ga masuk hierarki. Biasanya pasangan antara atribut dan nilai, tetapi ga jelas juga, tergantung makcomblangnya. Kalo digunakan banyak-banyak harus dipisahkan dengan tanda ampersand (&) atau semicolon (;) seperti di bawah ini:
 
-![Query delimiter](img/Screenshot-2018-3-28 URL - Wikipedia.png "Query delimiter")
+![Query delimiter](/img/Screenshot-2018-3-28 URL - Wikipedia.png "Query delimiter")
 
 ### Clean URL
 
 Pertanyaanku terjawab oleh penjelasan artikel Clean URL di bawah ini:
 
-![Clean URL](img/Screenshot-2018-3-28 Clean URL - Wikipedia.png "Clean URL")
+![Clean URL](/img/Screenshot-2018-3-28 Clean URL - Wikipedia.png "Clean URL")
 
 ### Internationalized URL
 
@@ -76,13 +76,13 @@ Contoh:
 
 Penggunaan:
 
-![UTM parameters](img/Screenshot-2018-3-28 UTM parameters - Wikipedia.png "UTM parameters")
+![UTM parameters](/img/Screenshot-2018-3-28 UTM parameters - Wikipedia.png "UTM parameters")
 
 ### Warning
 
 > query string (name/value pairs) is sent in the URL of a GET request or message body of a POST request
 
-![Two HTTP Request Methods: GET and POST](img/Screenshot-2018-3-28 HTTP Methods GET vs POST.png "Two HTTP Request Methods: GET and POST")
+![Two HTTP Request Methods: GET and POST](/img/Screenshot-2018-3-28 HTTP Methods GET vs POST.png "Two HTTP Request Methods: GET and POST")
 
 Sumber:
 
