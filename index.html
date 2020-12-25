@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="The JavaScript Site Generator">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="./css/sanitize.css" type="text/css">
+    <link rel="stylesheet" href="./css/animations.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <noscript>Please enable JavaScript to view this site.</noscript>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div class="container content">
+      <!-- Header -->
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="#" class="sitename" title="Home">
+            Home
+          </a>
+        </h3>
+        <small class="tagline">
+          This page is made possible by cms.js a Javascript Site Generator
+        </small>
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul>
+            <li><a href="#/posts">Posts</a></li>
+            <li><a href="#/pages">Pages</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- CMS Content -->
+      <div id="root"></div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <small class="footer-text">
+          Made without ads.
+        </small>
+        <a href="#" title="sort" id="sort">sort</a>
+        <input type="text" id="search">
+      </footer>
+    </div>
+
+    <!-- ES5 Polyfills -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.12/es5-shim.min.js"></script> -->
+    <!-- CMS.js -->
+    <script src="./js/cms.js"></script>
+    <!-- Config -->
+    <script src="./js/config.js"></script>
+  </body>
+
+</html>
