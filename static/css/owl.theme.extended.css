@@ -1,0 +1,52 @@
+.owl-nav .owl-prev {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 46px;
+  height: 46px;
+  margin-right: 0;
+
+  border: 1px solid aliceblue;
+  border-radius: 100%;
+  outline: none;
+  background-color: aliceblue;
+  box-shadow: 5px 0 20px 2px cyan;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+
+  box-sizing: border-box;
+  width: 46px;
+  height: 46px;
+  margin-right: 0;
+
+  border: 1px solid aliceblue;
+  border-radius: 100%;
+  outline: none;
+  background-color: aliceblue;
+  box-shadow: -5px 0 20px 2px cyan;
+}
+
+.owl-thumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-thumb-item {
+  width: 200px;
+  height: 100px;
+  padding: 0;
+
+  border: none;
+  outline: none;
+}
+.owl-thumbs img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
