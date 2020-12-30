@@ -1,0 +1,8 @@
+*.log
+.cache
+.DS_Store
+src/.temp
+public
+dist
+.env
+.env.*
