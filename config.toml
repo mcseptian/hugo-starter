@@ -1,5 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "http://localhost:5000/"
 languageCode = "en-us"
-title = "Awesome Lighting Inc."
+title = "Galeri Seni."
 [Params]
 description = ""

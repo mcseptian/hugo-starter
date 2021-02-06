@@ -15,13 +15,13 @@
         {
             "optionCombination" : ["With extension wire"],
             "comparePrice": null,
-            "actualPrice": "₹ 2917.00",
+            "actualPrice": "IDR 2917.00",
             "inStock": true
         },
         {
             "optionCombination" : ["Without extension wire"],
             "comparePrice": null,
-            "actualPrice": "₹ 2000.00",
+            "actualPrice": "IDR 2000.00",
             "inStock": false
         }
     ]

@@ -16,19 +16,19 @@
         {
             "optionCombination" : ["Chrome", "L19 x W24 x H23cms"],
             "comparePrice": null,
-            "actualPrice": "₹ 3,032.00",
+            "actualPrice": "IDR 3,032.00",
             "inStock": true
         },
         {
             "optionCombination" : ["Green", "L19 x W24 x H23cms"],
             "comparePrice": null,
-            "actualPrice": "₹ 2,032.00",
+            "actualPrice": "IDR 2,032.00",
             "inStock": false
         },
         {
             "optionCombination" : ["Black", "L19 x W24 x H23cms"],
             "comparePrice": null,
-            "actualPrice": "₹ 1,032.00",
+            "actualPrice": "IDR 1,032.00",
             "inStock": true
         }
     ]

@@ -15,7 +15,7 @@
             <div class="d-none d-md-block">{{ .Content }}</div>
         </div>
         <div class="col-12 col-md-6 order-md-1">
-            <div class="owl-carousel product-slider">
+            <div class="product-slider">
                 {{ range .Params.images }}
                     <!-- <img class="b-lazy img-fluid text-center" data-src="{{ . | absURL }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /> -->
                     <img class="b-lazy img-fluid text-center" data-src="{{ . | absURL }}" src="{{ . | absURL }}" />
