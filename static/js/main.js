@@ -17,13 +17,9 @@ void function (doc) {
     $("select").forEach(el => selectedProductOptions.push(el.value));
 
     function getSelectedVariant(productVariants, selectedProductOptions) {
-        console.log('selectedProductOptions: ', selectedProductOptions)
         var sortedSelectedProductOptions = _.sortBy(selectedProductOptions);
-        console.log('sortedSelectedProductOptions: ',sortedSelectedProductOptions)
         return _(productVariants).filter(function (productVariant) {
-            console.log('productVariant: ',productVariant)
             var sortedOptionCombination = _.sortBy(productVariant.optionCombination)
-            console.log('sortedOptionCombination: ',sortedOptionCombination)
             return _(sortedOptionCombination).isEqual(sortedSelectedProductOptions)
         }).first()
     }
@@ -31,7 +27,6 @@ void function (doc) {
     function selectPriceBasedOnVariant(e) {
         var selectedProductOptions = e;
         var selectedVariant = getSelectedVariant(productVariants, selectedProductOptions);
-        console.log('selectedVariant: ', selectedVariant)
         if (selectedVariant) {
             $$(".product-actual-price").textContent = selectedVariant.actualPrice;
             $$(".product-compare-price").textContent = selectedVariant.comparePrice;
