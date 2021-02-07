@@ -1,16 +1,21 @@
-{
-    "title": "Duke",
-    "date": "2018-05-12T15:48:00+05:30",
-    "tags": ["Floor Light"],
-    "categories": ["Floor Light"],
-    "images": ["img/duke/1.jpg", "img/duke/2.jpg", "img/duke/3.jpg"],
-    "thumbnailImage": "img/duke/thumbnail.jpg",
-    "actualPrice": "IDR 87,341.00",
-    "comparePrice": null,
-    "inStock": true,
-    "options": {},
-    "variants": []
-}
+---
+actualPrice: IDR 87,341.00
+categories:
+- Floor Light
+comparePrice: null
+date: "2018-05-12T15:48:00+05:30"
+images:
+- img/duke/1.jpg
+- img/duke/2.jpg
+- img/duke/3.jpg
+inStock: true
+options: {}
+tags:
+- Floor Light
+thumbnailImage: img/duke/thumbnail.jpg
+title: Duke
+variants: []
+---
 
 Total Fixture Dimensions (in inches): 51x51x63
 

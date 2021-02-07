@@ -1,32 +1,32 @@
-{
-    "title": "Azure Blue De Stijl Inspired Bedside Retro Light",
-    "date": "2018-05-10T08:02:34+05:30",
-    "tags": ["Wall Light"],
-    "categories": ["Wall Light"],
-    "images" : ["img/azure-blue-de-stijl-bedside-retro-light-with-black-ring/1.jpg"],
-    "thumbnailImage": "img/azure-blue-de-stijl-bedside-retro-light-with-black-ring/thumbnail.jpg",
-    "actualPrice": null,
-    "comparePrice": null,
-    "inStock": null,
-    "options": {
-        "Type": ["With extension wire", "Without extension wire"]
-    },
-    "variants":  [
-        {
-            "optionCombination" : ["With extension wire"],
-            "comparePrice": null,
-            "actualPrice": "IDR 2917.00",
-            "inStock": true
-        },
-        {
-            "optionCombination" : ["Without extension wire"],
-            "comparePrice": null,
-            "actualPrice": "IDR 2000.00",
-            "inStock": false
-        }
-    ]
-
-}
+---
+actualPrice: null
+categories:
+- Wall Light
+comparePrice: null
+date: "2018-05-10T08:02:34+05:30"
+images:
+- img/azure-blue-de-stijl-bedside-retro-light-with-black-ring/1.jpg
+inStock: null
+options:
+  Type:
+  - With extension wire
+  - Without extension wire
+tags:
+- Wall Light
+thumbnailImage: img/azure-blue-de-stijl-bedside-retro-light-with-black-ring/thumbnail.jpg
+title: Azure Blue De Stijl Inspired Bedside Retro Light
+variants:
+- actualPrice: IDR 2917.00
+  comparePrice: null
+  inStock: true
+  optionCombination:
+  - With extension wire
+- actualPrice: IDR 2000.00
+  comparePrice: null
+  inStock: false
+  optionCombination:
+  - Without extension wire
+---
 
 The azure blue bedside modern retro lamp is functional at different levels and minimal in appearance. You can swivel it to your desired angle and pivot the light freely.
 
