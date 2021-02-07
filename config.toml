@@ -2,4 +2,4 @@ baseURL = "http://localhost:5000/"
 languageCode = "en-us"
 title = "Galeri Seni."
 [Params]
-description = ""
+description = "This is developed theme."

@@ -20,4 +20,13 @@
     var productInStock = {{ .Params.inStock }}
     var productImage = {{ .Params.images }}
     var productVariants = JSON.parse({{ .Params.variants | jsonify }})
+    // add store
+    Spruce.persistUsing(window.sessionStorage)
+    Spruce.store('product', {
+        productActualPrice: {{ .Params.actualPrice }},
+        productComparePrice: {{ .Params.comparePrice }},
+        productInStock: {{ .Params.inStock }},
+        productImage: {{ .Params.images }},
+        productVariants: JSON.parse({{ .Params.variants | jsonify }})
+        }, true)
 </script>

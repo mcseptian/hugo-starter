@@ -1,2 +1,2 @@
 # Static Galery
-Halo 
+Halo ini adalah static site dengan tema dasar buatan [kishan](https://github.com/kishaningithub/hugo-shopping-product-catalogue-simple.git) dan sedang dalam pengembangan untuk memenuhi kebutuhanku sebagai _galeri seni_. Silakan `clone` dan kembangkan sesuai kebutuhanmu.
