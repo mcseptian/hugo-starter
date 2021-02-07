@@ -12,9 +12,11 @@ void function (doc) {
         }
     }
     
+    var productSelect = doc.contains($$("select"))
+    
     var selectedProductOptions = []
-
-    $("select").forEach(el => selectedProductOptions.push(el.value));
+    
+    if(productSelect) $("select").forEach(el => selectedProductOptions.push(el.value));
 
     function getSelectedVariant(productVariants, selectedProductOptions) {
         var sortedSelectedProductOptions = _.sortBy(selectedProductOptions);
@@ -35,20 +37,25 @@ void function (doc) {
             $$(".product-not-in-stock").textContent = 'Sold Out';
         }
     }
-    
-    $("select").forEach( value => {
-        value.addEventListener('change', function() {
-            selectedProductOptions = []
-            $("select").forEach(el => selectedProductOptions.push(el.value));
-            selectPriceBasedOnVariant(selectedProductOptions);
-            })
-        }
-    )
 
-    if (!_(productVariants).isEmpty()) {
-        selectPriceBasedOnVariant(selectedProductOptions);
+    if(productSelect) {
+        $("select").forEach( value => {
+            value.addEventListener('change', function() {
+                selectedProductOptions = []
+                $("select").forEach(el => selectedProductOptions.push(el.value));
+                selectPriceBasedOnVariant(selectedProductOptions);
+                })
+            }
+        ) 
     }
 
+    if (!_(productVariants).isEmpty()) selectPriceBasedOnVariant(selectedProductOptions);
+    /* lodash 
+        _.first() => Gets the first element of array.
+        _.isEqual() => Performs a deep comparison between two values to determine if they are equivalent.
+        _.filter() => Iterates over elements of collection, returning an array of all elements predicate returns truthy for. The predicate is invoked with three arguments: (value, index|key, collection).
+        _.isEmpty() => Checks if value is an empty object, collection, map, or set.
+    */
     // add lazy load images 
         var bLazy = new Blazy();
 }(document)
