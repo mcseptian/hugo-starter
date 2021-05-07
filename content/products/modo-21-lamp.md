@@ -7,7 +7,7 @@ date: "2018-05-12T15:54:25+05:30"
 images:
 - img/modo-21-lamp/1.jpg
 - img/modo-21-lamp/2.jpg
-- img/modo-21-lamp/2.jpg
+- img/modo-21-lamp/3.jpg
 inStock: true
 options: {}
 tags:

@@ -3,28 +3,72 @@
     <h1 class="text-center">{{ .Site.Title }}</h1>
     {{ with .Site.Params.description }}<h4 class="text-center">{{ . }}</h4>{{ end }}
 </header>
-<article class="container-fluid">
+<article class="container mx-auto">
     <div class="row">
         <div class="col-12">
-            {{ partial "products/common/site-main-nav.html" . }} 
+            {{ partial "products/common/site-main-nav.html" . }}
         </div>
     </div>
-    <div class="row align-items-start">
-        <div class="col-12 col-md-6 order-md-2">
-            {{ partial "products/single/product-single-heading.html" . }} 
+    <div class="flex flex-wrap">
+        <div class="w-1/2">
+            <div class="relative" x-data x-init="$store.product.carouselState = 0">
+                <div class="snap overflow-hidden relative flex-no-wrap flex transition-all"
+                     x-ref="slider"
+                     id="snap-slider"
+                     x-on:scroll.debounce="$store.product.carouselState = Math.round($event.target.scrollLeft / ($event.target.scrollWidth / $store.product.productImage.length))">
+                    <template x-for="(item,index) in $store.product.productImage"
+                              x-bind:key="index">
+                        <div class="w-full flex-shrink-0 h-100 bg-black text-white flex items-center justify-center">
+                            <img x-bind:src="item" />
+                        </div>
+                    </template>
+                </div>
+                <div class="absolute left-0 bottom-0 right-0 max-w-full p-5 flex items-center justify-center flex-1 carousel-nav">
+                    <button class="outline-none focus:outline-none rounded-full mx-4 bg-transparent text-white"
+                        x-on:click=" $refs.slider.scrollLeft = $refs.slider.scrollLeft - ($refs.slider.scrollWidth / $store.product.productImage.length)">
+                        prev
+                    </button>
+                    <template
+                        x-for="(item,index) in $store.product.productImage"
+                        x-bind:key="index">
+                        <span
+                            class="bg-white w-3 h-3 block mx-1 bg-opacity-25 shadow rounded-full"
+                            x-bind:class="{'bg-opacity-100': $store.product.carouselState === index }"></span>
+                    </template>
+                    <button class="outline-none focus:outline-none rounded-full mx-4 bg-transparent text-white"
+                        x-on:click="$refs.slider.scrollLeft = $refs.slider.scrollLeft + ($refs.slider.scrollWidth / $store.product.productImage.length)">
+                        next
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 p-5">
+            {{ partial "products/single/product-single-heading.html" . }}
             <div class="d-none d-md-block">{{ .Content }}</div>
         </div>
-        <div class="col-12 col-md-6 order-md-1">
-            <div class="product-slider">
-                {{ range .Params.images }}
-                    <!-- <img class="b-lazy img-fluid text-center" data-src="{{ . | absURL }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /> -->
-                    <img class="b-lazy img-fluid text-center" data-src="{{ . | absURL }}" src="{{ . | absURL }}" />
-                {{ end }}
-            </div>  
-        </div>
-        <div class="col-12 col-md-6 order-md-2 d-block d-md-none">
+        <div class="w-full">
             <p>{{ .Content }}</p>
         </div>
     </div>
 </article>
+<script>
+    var productActualPrice  = {{ .Params.actualPrice }}
+    var productComparePrice  = {{ .Params.comparePrice }}
+    var productInStock = {{ .Params.inStock }}
+    var productImage = [{{ range .Params.images }}
+                        "{{ . | absURL }}",
+                    {{ end }}];
+    var productVariants = JSON.parse({{ .Params.variants | jsonify }})
+    // add store
+    Spruce.reset('product', {
+        productActualPrice: {{ .Params.actualPrice }},
+        productComparePrice: {{ .Params.comparePrice }},
+        productInStock: {{ .Params.inStock }},
+        productImage: [{{ range .Params.images }}
+                        "{{ . | absURL }}",
+                    {{ end }}],
+        productVariants: JSON.parse({{ .Params.variants | jsonify }}),
+        carouselState: 0
+        }, true)
+</script>
 {{ end }}

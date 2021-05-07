@@ -1,12 +1,13 @@
-<nav class="navbar navbar-expand navbar-light justify-content-center">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="{{ "products/" | absURL }}">All</a>
+<nav class="text-center">
+    <ul class="navbar-nav inline-block py-2 px-4 list-none bg-gray-100 rounded-md" x-data="{current : true}">
+        <li class="nav-item inline-block py-2 px-3 rounded" :class="{'active' : current}">
+            <a class="nav-link no-underline" href="{{ "products/" | absURL }}">All</a>
         </li>
         {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-        <li class="nav-item">
-            <a class="nav-link" href="{{ .Permalink }}">{{ .Title | title }}</a>
+        <li class="nav-item inline-block">
+            <a class="nav-link no-underline" href="{{ .Permalink }}">{{ .Title | title }}</a>
         </li>
         {{ end }}
     </ul>
 </nav>
+

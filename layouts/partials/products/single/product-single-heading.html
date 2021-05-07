@@ -7,26 +7,10 @@
 <p>
     {{ range $index, $element := .Params.options }}
     <span>{{ $index | humanize }}: </span>
-    <select class="product-select select-{{ $index }}">
+    <select class="product-select select-{{ $index }} px-3 py-2 bg-white text-black rounded border-gray-200 border-2 ">
        {{ range $element  }}
         <option>{{ . }}</option>
       {{ end }}
     </select>
     {{ end }}
 </p>
-<script>
-    var productActualPrice  = {{ .Params.actualPrice }}
-    var productComparePrice  = {{ .Params.comparePrice }}
-    var productInStock = {{ .Params.inStock }}
-    var productImage = {{ .Params.images }}
-    var productVariants = JSON.parse({{ .Params.variants | jsonify }})
-    // add store
-    Spruce.persistUsing(window.sessionStorage)
-    Spruce.store('product', {
-        productActualPrice: {{ .Params.actualPrice }},
-        productComparePrice: {{ .Params.comparePrice }},
-        productInStock: {{ .Params.inStock }},
-        productImage: {{ .Params.images }},
-        productVariants: JSON.parse({{ .Params.variants | jsonify }})
-        }, true)
-</script>

@@ -2,20 +2,19 @@
     <h1 class="text-center">{{ .Site.Title }}</h1>
     {{ with .Site.Params.description }}<h4 class="text-center">{{ . }}</h4>{{ end }}
 </header>
-<article class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            {{ partial "products/common/site-main-nav.html" . }} 
+<article class="container mx-auto">
+    <div class="flex flex-wrap">
+        <div class="text-center w-full">
+            {{ partial "products/common/site-main-nav.html" . }}
         </div>
     </div>
-    <div class="row">
-        {{ range .Data.Pages }} 
-            {{ partial "products/list/product-list-item.html" . }} 
+    <div class="flex flex-wrap">
+        {{ range .Data.Pages }}
+            {{ partial "products/list/product-list-item.html" . }}
         {{ end }}
     </div>
     <script>
-    var productVariants = null;
-    
-    Spruce.reset('product', {productVariants: null,})
+        var productVariants = null;
+        Spruce.store('product');
     </script>
 </article>
