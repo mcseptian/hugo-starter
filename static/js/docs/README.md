@@ -1,7 +1,6 @@
 # Documentation of static files
 
-This is documentation of script used in this project
-There are main library that heavily used:
+Ini adalah folder dokumentasi untuk *javascript library* yang digunakan:
 1. Alpinejs
 2. Alpinejs-helper
 3. Lodash
