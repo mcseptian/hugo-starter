@@ -19,7 +19,7 @@
                     <template x-for="(item,index) in $store.product.productImage"
                               x-bind:key="index">
                         <div class="w-full flex-shrink-0 h-100 bg-black text-white flex items-center justify-center">
-                            <img x-bind:src="item" />
+                            <img x-bind:src="item" class="h-full lazyload"/>
                         </div>
                     </template>
                 </div>
